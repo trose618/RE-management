@@ -1,3 +1,3 @@
 class Lease < ApplicationRecord
-  belongs_to :apartment
+  has_one :apartment
 end

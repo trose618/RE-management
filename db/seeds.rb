@@ -11,9 +11,9 @@ Agent.create(name: "Terrance")
 
 Building.create(name: "access labs", address: "81 Prospect, Brooklyn, NY")
 
-Lease.create(start_date: DateTime.new(2018,12,3), exp_date: DateTime.new(2019,12,3), tenant_name: "Carlo")
+Lease.create!(start_date: DateTime.new(2018,12,3), exp_date: DateTime.new(2019,12,3), tenant_name: "Carlo")
 
-Lease.create(start_date: DateTime.new(2018,12,6), exp_date: DateTime.new(2020,12,6), tenant_name: "Rob")
+Lease.create!(start_date: DateTime.new(2018,12,6), exp_date: DateTime.new(2020,12,6), tenant_name: "Rob")
 
 Apartment.create(unit_no: "4A", size: 1000, bedrooms: 2, rent: 1500.50, electricity: false, water: true, gas: true, lease_id: 1, building_id: 1, agent_id: 1)
 
